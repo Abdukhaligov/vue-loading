@@ -1,17 +1,25 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <DotSnake/>
+    <AnimatedBorder style="display: none"/>
+    <BorderAnimation/>
+    <LoadingAnimation style="display: none"/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import DotSnake from './components/DotSnake.vue'
+import AnimatedBorder from './components/AnimatedBorder.vue'
+import BorderAnimation from './components/BorderAnimation.vue'
+import LoadingAnimation from './components/LoadingAnimation.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    DotSnake,
+    AnimatedBorder,
+    BorderAnimation,
+    LoadingAnimation
   }
 }
 </script>
